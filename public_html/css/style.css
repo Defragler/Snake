@@ -1,0 +1,68 @@
+@font-face{
+    font-family: 'clean';
+    src: url("../res/Geometos.ttf");
+}
+
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: clean, calibri;
+}
+.aside {
+    position: absolute;
+    height: 100%;
+    width: 350px;
+}
+.snakeColor {
+    background-color: #FE8C00;
+}
+.tetrisColor {
+    background-color: #52BF90;
+}
+.noughts-and-crossesColor {
+    background-color: #D63232;
+}
+.aside > h1.logo {
+    padding: 12px 0;
+    margin: 0 20px;
+    color: #111112;
+    width: 310px;
+    font-size: 42px;
+    text-align: center;
+    border-bottom: solid 3px #111112;
+}
+.aside > .nav {
+    margin: 0 20px;
+    width: 310px;
+}
+.aside > .nav > .navItem {
+    color: #111112;
+    background-color: transparent;
+    text-align: left;
+    border: 0px;
+    margin-top: 15px;
+    font-size: 24px;
+    width: auto;
+}
+.aside > .nav > .disabled {
+    color: #3a3a3c;
+}
+.aside > .nav > .navItem:hover > span {
+    cursor: pointer;
+}
+.content {
+    top: 0;
+    left: 350px;
+    position: absolute;
+    background-color: #3a3a3c;
+    height: 100%;
+    width: calc(100% - 350px);
+    min-width: 1000px;
+}
+.gameField {
+    margin-left: calc(50% - 500px);
+}
